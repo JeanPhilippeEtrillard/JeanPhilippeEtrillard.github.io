@@ -1,0 +1,186 @@
+.footer-copyright ul li {
+    transition: background-color .3s;
+    float: left;
+    padding: 0;
+}
+
+.footer-copyright ul {
+    line-height: 52px;
+    margin: 0;
+}
+
+.footer-copyright ul a {
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.footer-copyright ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer-copyright .row {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-left: 1%;
+    display: flex;
+}
+
+.footer-copyright .row div {
+    margin: auto;
+}
+
+/*
+Accueil
+ */
+
+.titre {
+    margin-top: 2%;
+    font: normal bold normal 20px/1 'Roboto';
+    font-family: 'Roboto', sans-serif;
+}
+
+.sousTitre {
+    padding-left: 1%;
+    font: normal normal normal 14px/1 'Roboto';
+    font-family: 'Roboto', sans-serif;
+}
+
+.description p {
+
+    font: normal normal normal 13px/1 'Roboto';
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.photoAccueil {
+    margin-top: 1%;
+    width: 100%
+}
+
+/*
+    CV
+ */
+.cvTitre {
+    padding-left: 1%;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.cvItem .iconTitre {
+    min-width: 60px;
+    min-height: 42px;
+}
+
+.cvSection {
+    display: flex;
+    align-items: center;
+
+}
+
+.cvInfo {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: disc;
+}
+
+.cvInfo li {
+    width: 48%;
+    margin-right: 1%;
+
+}
+
+.cvItemCPeriode {
+    font-weight: bold;
+    margin-right: 2%;
+    width: 10%;
+
+}
+
+.cvItemCTitre {
+    font-weight: bold;
+}
+
+.cvItemDiv {
+    display: flex;
+    margin-top: 1%;
+}
+
+.cvItemCInfo {
+    width: 88%;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .cvItem i {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-top: 2%;
+    }
+
+    .cvItem .divider {
+        margin-top: 3%;
+    }
+
+}
+
+.cvSkill {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillTable {
+    margin-top: 1%;
+    width: 16%;
+    margin-right: 0.5%;
+}
+
+.starEnable {
+    color: #fbc02d;
+}
+
+.starDisable {
+    color: #757575;
+}
+
+.textStar{
+    color: #757575;
+    vertical-align: center;
+    text-align: center;
+    margin-left: 7%;
+}
+
+.skillTable tbody td {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: none !important;
+}
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    .hidden{
+        display: inherit !important;
+    }
+    .divider {
+        height: 3px;
+    }
+    html{
+        font-size: 13px;
+    }
+    .skillTable tbody td{
+        display : flex;
+        justify-content: space-around;
+    }
+}
